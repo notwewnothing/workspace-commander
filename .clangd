@@ -1,0 +1,7 @@
+CompileFlags:
+  Add: [-mlong-calls]
+  Remove: [-fno-tree-switch-conversion, -fstrict-volatile-bitfields, -mlongcalls]
+  CompilationDatabase: .
+  # The query-driver allows clangd to extract system headers from the cross-compiler
+  QueryDriver:
+    - /home/linoux/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-*
